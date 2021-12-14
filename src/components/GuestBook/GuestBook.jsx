@@ -1,11 +1,14 @@
 import React from 'react'
+import { useEntries } from '../../context/EntryContext'
 
 export default function GuestBook() {
   const [name, setName] = useState('')
   const [guestEntry, setGuestEntry] = useState('')
+  const { entries, setEntries } = useEntries()
   
   function updateName() {
     if (!guestEntry) return
+    setEntries([...entries, { name, message: guestEntry }])
     setGuestEntry('')
   }
 
