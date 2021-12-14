@@ -16,7 +16,7 @@ export default function GuestBook() {
 
   return (
     <>
-      <form>
+      <form className='form' onSubmit={handleSubmit}>
         <input
           className="guestname-input"
           id="guestName"
