@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useEntries } from '../../context/EntryContext'
 import { useUser } from '../../context/UserContext'
 
