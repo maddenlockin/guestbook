@@ -1,13 +1,13 @@
-import { useEntries } from "../../context/EntryContext"
-import Entry from "../Entry/Entry";
-
+import React from 'react';
+import { useEntries } from '../../context/EntryContext';
+import Entry from '../Entry/Entry';
 
 export default function EntryList() {
-  const { entries } = useEntries()
+  const { entries } = useEntries();
 
   return (
     <div>
-      <ul className='list'>
+      <ul className="list">
         {entries.map((entry) => {
           return (
             <li key={`${entry.name}-${entry.message}`}>
@@ -15,8 +15,7 @@ export default function EntryList() {
             </li>
           );
         })}
-        
       </ul>
     </div>
-  )
+  );
 }

@@ -3,7 +3,7 @@ import EntryList from './EntryList';
 import { screen, render } from '@testing-library/react';
 import { EntryProvider } from '../../context/EntryContext';
 
-xit('renders list of entries', async () => {
+it('renders list of entries', async () => {
   const { container } = render(
     <EntryProvider>
       <EntryList />
