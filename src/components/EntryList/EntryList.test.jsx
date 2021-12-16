@@ -9,5 +9,5 @@ it('renders list of entries', async () => {
       <EntryList />
     </EntryProvider>
   );
-  expect(container).toMatchSnapshot;
+  expect(container).toMatchSnapshot();
 });
