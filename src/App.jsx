@@ -4,6 +4,7 @@ import Home from "./views/Home/Home";
 import Layout from "./views/Layout/Layout";
 import React from "react";
 import { ProvideAuth } from "./context/ProvideAuth";
+import PrivateRoute from "./components/Entry/PrivateRoute/PrivateRoute";
 
 export default function App() {
   return (
