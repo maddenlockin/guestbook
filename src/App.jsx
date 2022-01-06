@@ -5,6 +5,7 @@ import Layout from "./views/Layout/Layout";
 import React from "react";
 import { ProvideAuth } from "./context/ProvideAuth";
 import PrivateRoute from "./components/Entry/PrivateRoute/PrivateRoute";
+import Login from "./views/Auth/Login";
 
 export default function App() {
   return (
