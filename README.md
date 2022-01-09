@@ -42,4 +42,5 @@ Use the React template to start your project.
 | Snapshot testing                                                  |      2 | 
 | Deployed on Netlify with passing CI                               |      2 |
 
-/Users/maddenlockin/alchemy/2.0/3week/guestbook/src/assets/Auth_Rubric.png
+
+![Assignment 2- Add Auth- Rubric](https://user-images.githubusercontent.com/78505141/148700912-4296244c-1d47-4fd0-8304-c27e8f04be49.png)
