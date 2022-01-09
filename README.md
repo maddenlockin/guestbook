@@ -39,5 +39,7 @@ Use the React template to start your project.
 | Use a custom hook to expose a way to update our context           |      4 |
 | Use the children prop to provide context data to child components |      2 |
 | Use the user context state in at least 2 components               |      2 |
-| Snapshot testing                                                  |      2 |
+| Snapshot testing                                                  |      2 | 
 | Deployed on Netlify with passing CI                               |      2 |
+
+/Users/maddenlockin/alchemy/2.0/3week/guestbook/src/assets/Auth_Rubric.png
