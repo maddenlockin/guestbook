@@ -11,23 +11,18 @@ export default function App() {
   return (
     <ProvideAuth>
       <Router>
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <PrivateRoute path="/">
-            <Layout>
+        <Layout>
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <PrivateRoute path="/">
               <Home />
-            </Layout>
-          </PrivateRoute>
-        </Switch>
+            </PrivateRoute>
+          </Switch>
+        </Layout>
       </Router>
     </ProvideAuth>
   );
 }
 
-{
-  /* <Layout>
-  <Home />
-</Layout>; */
-}

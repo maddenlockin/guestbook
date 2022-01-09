@@ -1,11 +1,12 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState,  useMemo } from "react";
 //create context
 const UserContext = createContext()
 //create provider
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState('')
 
-  return <UserContext.Provider value={{ user, setUser }}>
+  const value = useMemo(() => ({ user, setUser }), [user])
+  return <UserContext.Provider value={value}>
     {children}
   </UserContext.Provider>
 }

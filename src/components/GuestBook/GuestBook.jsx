@@ -58,7 +58,7 @@ export default function GuestBook() {
         </div>
         <div>
           <button className="sumbit-button" type="submit">
-            Sumbit
+            Submit
           </button>
           {user && (
             <button 

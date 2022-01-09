@@ -2,7 +2,7 @@ import Header from "../../components/layout/Header";
 import React from 'react'
 
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <div>
       <Header />
@@ -12,3 +12,4 @@ export default function Layout({ children }) {
     </div>
   )
 }
+export default Layout;
