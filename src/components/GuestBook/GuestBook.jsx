@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
-import { useEntries } from '../../context/EntryContext'
-//import { useUser } from '../../context/UserContext'
-import { useAuth } from '../../hooks/useAuth'
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { useEntries } from '../../context/EntryContext';
+//import { useUser } from '../../context/UserContext';
+import { useAuth } from '../../hooks/useAuth';
 
 export default function GuestBook() {
-  const [name, setName] = useState('')
+  //const [name, setName] = useState('')
   const [guestEntry, setGuestEntry] = useState('')
   const { entries, setEntries } = useEntries()
   //const { user, setUser } = useUser()

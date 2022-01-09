@@ -2,13 +2,13 @@ import React, { createContext, useState } from 'react'
 
 export const authContext = createContext();
 
-export function ProvideAuth({children}) {
+export function ProvideAuth({ children }) {
   const [user, setUser] = useState(null);
 
   const login = (email, password) => {
     const loginSuccessful = 
       email === process.env.AUTH_EMAIL &&
-      passord === process.env.AUTH_PASSWORD;
+      password === process.env.AUTH_PASSWORD;
     if (loginSuccessful) setUser({ email });
     return loginSuccessful;
   }

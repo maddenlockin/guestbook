@@ -20,7 +20,7 @@ export default function Login() {
     if (loginSuccess) {
       history.replace(from);
     } else {
-      return new Error('Invalid credentials');
+      setError('Invalid credentials');
     }
   };
   
@@ -29,19 +29,21 @@ export default function Login() {
       <form onSubmit={handleLogin} className='login-form' >
         <label htmlFor='email'>Email</label>
         <input
+          required
           id='email'
           name='email'
           type='email'
           value={formState.email}
-          onChange={(value) => handleFormChange(value)}
+          onChange={handleFormChange}
         />{' '}
         <label htmlFor='password'>Password</label>
         <input
+          required
           id='password'
           name='password'
           type='password'
           value={formState.password}
-          onChange={(value) => handleFormChange(value)}
+          onChange={handleFormChange}
         />{' '}
         <button type='submit' aria-label='Sign In'>
           Sign in
