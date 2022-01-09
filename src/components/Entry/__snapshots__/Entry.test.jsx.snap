@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a guestbook entry 1`] = `
+<div>
+  <div>
+    <h2
+      class="entryName"
+    >
+      -
+      Doris
+    </h2>
+    <p
+      class="entryMessage"
+    >
+      meow
+    </p>
+  </div>
+</div>
+`;
